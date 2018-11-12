@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import Car from './views/Car'
+import Add from './views/AddCar'
 class App extends Component {
   render() {
     return (
@@ -18,8 +19,10 @@ class App extends Component {
             </ul>
           </div>
         </nav>
-        <Car/>
-
+        
+        <div className="container"><Car /></div>
+        
+        <div className="container"><Add /></div>
       </div>
     );
   }
